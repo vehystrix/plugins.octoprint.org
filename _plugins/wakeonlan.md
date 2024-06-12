@@ -9,7 +9,7 @@ authors:
 - Itay Zelikovich
 license: AGPLv3
 
-date: 2024-07-06
+date: 2024-06-07
 
 homepage: https://github.com/Aridor2003/OctoPrint-Wakeonlan
 source: https://github.com/Aridor2003/OctoPrint-Wakeonlan
