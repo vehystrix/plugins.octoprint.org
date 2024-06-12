@@ -89,6 +89,7 @@ SCHEMA = Schema(
         Optional("abandoned"): NonEmptyString,
         Optional("up_for_adoption"): Url(),
         Optional("redirect_from"): NonEmptyString,
+        Optional("attributes"): list,
     }
 )
 
