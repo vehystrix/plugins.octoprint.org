@@ -42,6 +42,9 @@ compatibility:
 
   python: ">=3,<4"
 
+attributes:
+- cloud
+
 ---
 ### Features
 This plugin permits remote access of your OctoPrint instances through [ZupFe](https://zupfe.velor.ca).

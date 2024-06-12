@@ -91,6 +91,11 @@ compatibility:
 
   python: ">=2.7,<4"
 
+attributes:
+- cloud
+- commercial
+- free-tier
+
 ---
 
 <p class="alert alert-warning">Access Anywhere - The Spaghetti Detective plugin has been
