@@ -84,7 +84,7 @@ layout: page
     {% if sorted_plugins_size >= 20 %}
     {% assign popular_plugins = sorted_plugins | slice: 0, 20 | sample: 20 %}
     <h3>Popular plugins</h3>
-    <small><em>... in random order</em></small>
+    <p><small><em>... in random order</em></small></p>
     <ul>
       {% for plugin in popular_plugins %}
       <li>
@@ -92,7 +92,7 @@ layout: page
       </li>
       {% endfor %}
     </ul>
-    <small><em>Based on anonymous usage data.</em></small>
+    <small><em>Based on anonymous usage data. Please note that commercial plugins are exempt from this list due to past manipulations.</em></small>
     {% endif %}
 
   </div>
