@@ -7,7 +7,12 @@ layout: plugin_list
     {% assign fixed = id | prepend: '/plugins/' %}
     {% assign topic_plugins = topic_plugins | push: fixed %}
 {% endfor %}
-{% assign sorted_plugins = site.plugins | where_exp: "plugin", "plugin.stats.month.instances" | sort: "stats.month.instances", "last" | reverse %}
+
+{% assign sorted_plugins_with_stats = site.plugins | where_exp: "plugin", "plugin.stats.month.instances" | sort: "stats.month.instances", "last" | reverse %}
+{% assign plugins_without_stats = site.plugins | where: "stats", nil %}
+{% assign plugins_without_stats_size = plugins_without_stats | size %}
+{% assign sampled_plugins_without_stats = plugins_without_stats | sample: plugins_without_stats_size %}
+{% assign sorted_plugins = sorted_plugins_with_stats | concat: sampled_plugins_without_stats %}
 
 <p><em>
   Topics are curated lists of plugins pertaining to a certain topic. They are provided for your convenience, they do not constitute official endorsement of any plugin.
