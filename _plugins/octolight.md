@@ -158,16 +158,5 @@ Currently, you can configure settings:
 
 
 ## API
-Base API URL: `GET http://YOUR_OCTOPRINT_SERVER/api/plugin/octolight?action=ACTION_NAME`
 
-This API always returns updated light state in JSON: `{state: true}` <br />
-Any API call will require a API key with the "Control" permission.  Without this, you will receive a 403 error.
-
-_(if the action parameter not given, the action toggle will be used by default)_
-#### Actions
-- **toggle** (default action): Toggle light switch on/off.
-- **turnOn**: Turn on light.
-- **turnOff**: Turn off light.
-- **getState**: Get current light switch state.
-- **delayOff**: Turn on light and setup timer to shutoff light after delay time, note, `&delay=VALUE` can be added to the URL to override the default time value.
-- **delayOffStop**: Testing for shutting off timer and light.
+**Note:** OctoLight supports API calls, please go to the following link to check the latest information: https://github.com/thomst08/OctoLight#api
