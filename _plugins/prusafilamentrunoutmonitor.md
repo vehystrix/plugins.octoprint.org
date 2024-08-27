@@ -7,7 +7,7 @@ description: Plugin monitors Prusa Buddy firmware's (MK4, Mini, XL, MK3.9) seria
 authors:
 - jneilliii
 license: AGPLv3
-date: 2024-08-12
+date: 2024-08-28
 homepage: https://github.com/jneilliii/OctoPrint-PrusaFilamentRunoutMonitor
 source: https://github.com/jneilliii/OctoPrint-PrusaFilamentRunoutMonitor
 archive: https://github.com/jneilliii/OctoPrint-PrusaFilamentRunoutMonitor/archive/master.zip
