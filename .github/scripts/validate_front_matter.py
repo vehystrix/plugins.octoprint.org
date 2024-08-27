@@ -8,7 +8,7 @@ import click
 import colorama
 import frontmatter
 import pkg_resources
-from voluptuous import All, Invalid, Length, Optional, Required, Schema, Url
+from voluptuous import All, Any, Invalid, Length, Optional, Required, Schema, Url
 
 OCTOPRINT_PY3_SUPPORT = ("3.7", "3.8", "3.9")
 
@@ -89,7 +89,7 @@ SCHEMA = Schema(
         Optional("abandoned"): NonEmptyString,
         Optional("up_for_adoption"): Url(),
         Optional("redirect_from"): NonEmptyString,
-        Optional("attributes"): list,
+        Optional("attributes"): Any(list, None),
     }
 )
 
