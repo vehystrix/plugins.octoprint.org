@@ -58,5 +58,5 @@ PrintJobHistory:
   user: dojohnso
   pip: https://github.com/dojohnso/OctoPrint-PrintJobHistory/releases/download/{target_version}/main.zip
 SpoolManager:
-  user: dojohnso
-  pip: https://github.com/dojohnso/OctoPrint-SpoolManager/releases/download/{target_version}/main.zip
+  user: WildRikku
+  pip: https://github.com/WildRikku/OctoPrint-SpoolManager/releases/download/{target_version}/main.zip
